@@ -1,7 +1,7 @@
 tool
 extends EditorScript
 
-var node_referencer = preload("res://addons/node_referencer/plugin.gd").new()
+var node_referencer = preload("../node_referencer/plugin.gd").new()
 
 func _run():
 	var updated := ""
