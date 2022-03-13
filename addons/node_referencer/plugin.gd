@@ -10,9 +10,12 @@ var number_regex := RegEx.new()
 func _enter_tree() -> void:
 	number_regex.compile("\\d\\/*")
 	
-	add_tool_menu_item("Generate Node Reference", self, "_on_ToolMenu_generate_node_reference_pressed")
-	add_tool_menu_item("Generate Class Reference", self, "_on_ToolMenu_generate_class_reference_pressed")
-	add_tool_menu_item("Update Node References", self, "_on_ToolMenu_update_node_references_pressed")
+	add_tool_menu_item("Generate Node Reference", self,
+			"_on_ToolMenu_generate_node_reference_pressed")
+	add_tool_menu_item("Generate Class Reference", self,
+			"_on_ToolMenu_generate_class_reference_pressed")
+	add_tool_menu_item("Update Node References", self,
+			"_on_ToolMenu_update_node_references_pressed")
 
 
 func _exit_tree() -> void:

@@ -9,7 +9,8 @@ func _run():
 			get_editor_interface().get_edited_scene_root(),
 			get_editor_interface().get_script_editor().get_current_script())
 	for assign in OS.clipboard.split("\n"):
-		var node_referenced = get_editor_interface().get_edited_scene_root().find_node(get_node_name(assign))
+		var node_referenced = get_editor_interface().get_edited_scene_root()\
+				.find_node(get_node_name(assign))
 		updated += node_referencer.get_node_reference(
 				node_referenced, root.get_path_to(node_referenced)) + "\n"
 	OS.clipboard = updated
