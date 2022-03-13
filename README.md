@@ -4,7 +4,7 @@ Tool to generate and update node and class references for GDScripts.
 
 ## Installation
 
-Copy the `referencer` folder into the addons folder, or use my [plugin manager](https://github.com/Jummit/godot-package-manager):
+Copy the `reference_generator` folder into the addons folder, or use my [plugin manager](https://github.com/Jummit/godot-package-manager):
 
 ```bash
 gopm install https://github.com/Jummit/referencer-addon.git
