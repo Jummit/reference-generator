@@ -84,7 +84,7 @@ func get_node_reference(to_node : Node, node_path : NodePath) -> String:
 	var path := String(node_path)
 	if "." in path or number_regex.search(path):
 		path = '"%s"' % path
-	return "onready var %s : %s = $%s" % [
+	return "onready var _%s: %s = $%s" % [
 			pascal_to_snake_case(to_node.name),
 			to_node.get_class(),
 			path]
